@@ -40,7 +40,7 @@ defmodule Mailtrap.MixProject do
         "Official mailtrap.io API clients. Bamboo adapters for mailtrap.io Sandbox and Sending",
       maintainers: ["Railsware Products Studio LLC <support@mailtrap.io>"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/railsware/mailtrap-elixir"}
+      links: %{"GitHub" => "https://github.com/mailtrap/mailtrap-elixir"}
     ]
   end
 
