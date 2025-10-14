@@ -4,8 +4,8 @@
 [![Module Version](https://img.shields.io/hexpm/v/mailtrap.svg)](https://hex.pm/packages/mailtrap)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/mailtrap/)
 [![Total Download](https://img.shields.io/hexpm/dt/mailtrap.svg)](https://hex.pm/packages/mailtrap)
-[![License](https://img.shields.io/hexpm/l/mailtrap.svg)](https://github.com/mailtrap/mailtrap-elixir/blob/master/LICENSE.md)
-[![Last Updated](https://img.shields.io/github/last-commit/mailtrap/mailtrap-elixir.svg)](https://github.com/mailtrap/mailtrap-elixir/commits/master)
+[![License](https://img.shields.io/hexpm/l/mailtrap.svg)](https://github.com/mailtrap/mailtrap-elixir/blob/main/LICENSE.md)
+[![Last Updated](https://img.shields.io/github/last-commit/mailtrap/mailtrap-elixir.svg)](https://github.com/mailtrap/mailtrap-elixir/commits/main)
 
 Mailtrap API client
 Bamboo adapters for Mailtrap Sandbox and Mailtrap Sending APIs
