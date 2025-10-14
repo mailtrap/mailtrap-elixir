@@ -3,8 +3,6 @@ defmodule Mailtrap.Sending do
   Mailtrap Sending API client
   """
 
-  use Tesla
-
   @doc """
   Generates client
   """
@@ -25,6 +23,6 @@ defmodule Mailtrap.Sending do
   """
   @spec send(Tesla.Client.t(), Mailtrap.Email.t()) :: {:ok, map()} | {:error, Tesla.Env.t()}
   def send(client, email) do
-    post(client, "send", email)
+    Tesla.post(client, "send", email)
   end
 end

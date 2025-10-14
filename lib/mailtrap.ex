@@ -3,8 +3,6 @@ defmodule Mailtrap do
   Mailtrap API client
   """
 
-  use Tesla
-
   @doc """
   Generates client
   """
@@ -19,5 +17,64 @@ defmodule Mailtrap do
     ]
 
     Tesla.client(middleware)
+  end
+
+  @doc """
+  Makes a GET request
+  """
+  @spec get(Tesla.Client.t(), String.t(), keyword()) :: {:ok, any()} | {:error, Tesla.Env.t()}
+  def get(client, url, opts \\ []) do
+    Tesla.get(client, url, opts)
+  end
+
+  @doc """
+  Makes a POST request
+  """
+  @spec post(Tesla.Client.t(), String.t(), any(), keyword()) ::
+          {:ok, any()} | {:error, Tesla.Env.t()}
+  def post(client, url, body, opts \\ []) do
+    Tesla.post(client, url, body, opts)
+  end
+
+  @doc """
+  Makes a PUT request
+  """
+  @spec put(Tesla.Client.t(), String.t(), any(), keyword()) ::
+          {:ok, any()} | {:error, Tesla.Env.t()}
+  def put(client, url, body, opts \\ []) do
+    Tesla.put(client, url, body, opts)
+  end
+
+  @doc """
+  Makes a PATCH request
+  """
+  @spec patch(Tesla.Client.t(), String.t(), any(), keyword()) ::
+          {:ok, any()} | {:error, Tesla.Env.t()}
+  def patch(client, url, body, opts \\ []) do
+    Tesla.patch(client, url, body, opts)
+  end
+
+  @doc """
+  Makes a DELETE request
+  """
+  @spec delete(Tesla.Client.t(), String.t(), keyword()) :: {:ok, any()} | {:error, Tesla.Env.t()}
+  def delete(client, url, opts \\ []) do
+    Tesla.delete(client, url, opts)
+  end
+
+  @doc """
+  Makes a HEAD request
+  """
+  @spec head(Tesla.Client.t(), String.t(), keyword()) :: {:ok, any()} | {:error, Tesla.Env.t()}
+  def head(client, url, opts \\ []) do
+    Tesla.head(client, url, opts)
+  end
+
+  @doc """
+  Makes an OPTIONS request
+  """
+  @spec options(Tesla.Client.t(), String.t(), keyword()) :: {:ok, any()} | {:error, Tesla.Env.t()}
+  def options(client, url, opts \\ []) do
+    Tesla.options(client, url, opts)
   end
 end
