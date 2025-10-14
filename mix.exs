@@ -5,7 +5,7 @@ defmodule Mailtrap.MixProject do
     [
       app: :mailtrap,
       version: "0.1.2",
-      elixir: "~> 1.14",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
@@ -30,7 +30,7 @@ defmodule Mailtrap.MixProject do
       {:ex_machina, "~> 2.7", only: :test},
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 
