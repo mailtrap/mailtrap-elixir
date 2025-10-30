@@ -1,5 +1,3 @@
-# Mailtrap
-
 [![Elixir CI](https://github.com/mailtrap/mailtrap-elixir/actions/workflows/elixir.yml/badge.svg)](https://github.com/mailtrap/mailtrap-elixir/actions/workflows/elixir.yml)
 [![Module Version](https://img.shields.io/hexpm/v/mailtrap.svg)](https://hex.pm/packages/mailtrap)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/mailtrap/)
@@ -7,7 +5,8 @@
 [![License](https://img.shields.io/hexpm/l/mailtrap.svg)](https://github.com/mailtrap/mailtrap-elixir/blob/main/LICENSE.md)
 [![Last Updated](https://img.shields.io/github/last-commit/mailtrap/mailtrap-elixir.svg)](https://github.com/mailtrap/mailtrap-elixir/commits/main)
 
-Mailtrap API client
+# Official Mailtrap Elixir Client 
+
 Bamboo adapters for Mailtrap Sandbox and Mailtrap Sending APIs
 
 ## Installation
