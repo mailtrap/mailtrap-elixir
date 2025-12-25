@@ -61,20 +61,4 @@ defmodule Mailtrap do
   def delete(client, url, opts \\ []) do
     Tesla.delete(client, url, opts)
   end
-
-  @doc """
-  Makes a HEAD request
-  """
-  @spec head(Tesla.Client.t(), String.t(), keyword()) :: {:ok, any()} | {:error, Tesla.Env.t()}
-  def head(client, url, opts \\ []) do
-    Tesla.head(client, url, opts)
-  end
-
-  @doc """
-  Makes an OPTIONS request
-  """
-  @spec options(Tesla.Client.t(), String.t(), keyword()) :: {:ok, any()} | {:error, Tesla.Env.t()}
-  def options(client, url, opts \\ []) do
-    Tesla.options(client, url, opts)
-  end
 end
