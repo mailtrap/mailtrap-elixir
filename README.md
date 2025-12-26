@@ -14,7 +14,7 @@ Bamboo adapters for Mailtrap Sandbox and Mailtrap Sending APIs
 ```elixir
 def deps do
   [
-    {:mailtrap, "~> 0.1.0"}
+    {:mailtrap, "~> 0.2.0"}
   ]
 end
 ```
