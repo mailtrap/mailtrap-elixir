@@ -4,15 +4,18 @@ defmodule Mailtrap.Sandbox do
 
   ## Example
 
-    {:ok, data} = File.read(Path.join(__DIR__, "test/support/invoice.pdf"))
-    attachment = Mailtrap.Email.Attachment.build(data, "invoice1.pdf")
-    %Mailtrap.Email{}
-    |> Mailtrap.Email.put_from("Sender", "sender@example.com")
-    |> Mailtrap.Email.put_to([{"Lolek", "lolek@example.com"}, {"Bolek", "bolek@example.com"}])
-    |> Mailtrap.Email.put_subject("Bla bla")
-    |> Mailtrap.Email.put_text("Text bla bla")
-    |> Mailtrap.Email.put_attachments([attachment])
-    |> Mailtrap.Sandbox.send(111) # 111 is inbox id
+  ```elixir
+  {:ok, data} = File.read(Path.join(__DIR__, "test/support/invoice.pdf"))
+  attachment = Mailtrap.Email.Attachment.build(data, "invoice1.pdf")
+
+  %Mailtrap.Email{}
+  |> Mailtrap.Email.put_from("Sender", "sender@example.com")
+  |> Mailtrap.Email.put_to([{"Lolek", "lolek@example.com"}, {"Bolek", "bolek@example.com"}])
+  |> Mailtrap.Email.put_subject("Bla bla")
+  |> Mailtrap.Email.put_text("Text bla bla")
+  |> Mailtrap.Email.put_attachments([attachment])
+  |> Mailtrap.Sandbox.send(111) # 111 is inbox id
+  ```
   """
 
   @doc """
